@@ -22,6 +22,7 @@ resource oci_core_network_security_group bastion-nsg {
   }
   display_name = "bastion-nsg"
   freeform_tags = {
+    "type" = "nsg"
   }
   vcn_id = oci_core_vcn.soavcn-phx.id
 }
